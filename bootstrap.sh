@@ -1,3 +1,17 @@
 #!/bin/sh -e
 
-stow bash
+src="
+bash
+ctags
+git
+pentadactyl
+readline
+tmux
+tmuxp
+urxvt
+vim
+"
+
+for each in $src; do
+    stow $each
+done
