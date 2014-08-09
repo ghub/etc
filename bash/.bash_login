@@ -1,6 +1,6 @@
 
-if [ -f ~/etc/.profile ]; then
-    . ~/etc/.profile
+if [ -f ~/.profile ]; then
+    . ~/.profile
 fi
 
 if [ -d ~/etc/profile.d ]; then
