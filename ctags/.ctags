@@ -1,0 +1,7 @@
+--c++-kinds=+p
+--extra=+q
+--fields=+aiS
+--languages=C,C++
+--recurse=yes
+--sort=foldcase
+--tag-relative=yes

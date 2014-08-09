@@ -1,0 +1,15 @@
+session_name: euler
+start_directory: ws/euler
+windows:
+- shell_command_before:
+    - . bin/env.sh
+  layout: main-vertical
+  options:
+    other-pane-width: 69
+  panes:
+  - shell_command:
+    - vi -O2
+    focus: true
+  - test.sh
+  -
+  - python

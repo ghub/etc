@@ -1,0 +1,12 @@
+"1.1
+
+map -modes=n <C-w> -builtin <Nop>
+map -modes=n d -builtin <Nop>
+map -modes=n <Space>l -builtin :silent nohlfind<CR>
+map -modes=n,v ; -builtin :
+map -modes=n,v : -builtin ;
+
+set hintkeys=asdfg;lkjh
+set hlfind
+
+" vim: set ft=pentadactyl:
