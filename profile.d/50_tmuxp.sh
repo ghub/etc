@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-. tmuxp.bash
+hash tmuxp.bash 2>/dev/null && . tmuxp.bash
