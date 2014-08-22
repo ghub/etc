@@ -118,6 +118,7 @@ nnoremap   <Leader>V   :source $MYVIMRC<CR>
 "
 " let g:bufExplorerShowRelativePath=1
 " let g:bufExplorerSortBy='name'
+let g:ctrlp_max_files=0
 " let g:ctrlp_match_window='max:30'
 " let g:slime_target='tmux'
 " let g:syntastic_always_populate_loc_list=1
