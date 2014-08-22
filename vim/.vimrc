@@ -105,7 +105,7 @@ cnoremap   <C-K>       <Up>
 
 " nnoremap   <C-E>       :NERDTreeToggle<CR>
 " nnoremap   <Leader>e   :NERDTreeFind<CR>
-" nnoremap   <Leader>f   :GHPH<CR>
+nnoremap   <Leader>f   :GHPH<CR>
 " nnoremap   <Leader>g   g<C-]>
 " nnoremap   <Leader>pc  :YcmCompleter GoToDeclaration<CR>
 " nnoremap   <Leader>pd  :YcmCompleter GoToDefinition<CR>
