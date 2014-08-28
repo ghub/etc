@@ -107,15 +107,21 @@ cnoremap   <C-K>       <Up>
 " nnoremap   <Leader>e   :NERDTreeFind<CR>
 " nnoremap   <Leader>f   :GHPH<CR>
 " nnoremap   <Leader>g   g<C-]>
-" nnoremap   <Leader>pc  :YcmCompleter GoToDeclaration<CR>
-" nnoremap   <Leader>pd  :YcmCompleter GoToDefinition<CR>
-" nnoremap   <Leader>pg  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_min_num_identifier_candidate_chars=4
+let g:ycm_seed_identifiers_with_syntax=1
+nnoremap <Leader>pc :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>pd :YcmCompleter GoToDefinition<CR>
+nnoremap <Leader>pg :YcmCompleter GoTo<CR>
+nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
+
 " nnoremap   <Leader>t   :TagbarToggle<CR>
 nnoremap   <Leader>l   :nohlsearch<CR>
 nnoremap   <Leader>v   :vsplit $MYVIMRC<CR>
 nnoremap   <Leader>V   :source $MYVIMRC<CR>
-" nnoremap   <Leader>y   :YcmForceCompileAndDiagnostics<cr>
-"
+
 " let g:bufExplorerShowRelativePath=1
 " let g:bufExplorerSortBy='name'
 let g:ctrlp_max_files=0
@@ -126,11 +132,6 @@ let g:ctrlp_max_files=0
 " let g:syntastic_warning_symbol='⚠'
 " let g:tagbar_left=1
 " let g:tagbar_sort=0
-" let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_confirm_extra_conf=0
-" let g:ycm_min_num_identifier_candidate_chars=4
-" let g:ycm_seed_identifiers_with_syntax=1
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 " "let g:UltiSnipsExpandTrigger="<C-s>"
 " "let g:UltiSnipsJumpForwardTrigger="A-f"
 " "let g:UltiSnipsJumpBackwardTrigger="A-b"
