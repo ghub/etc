@@ -130,9 +130,6 @@ nnoremap   <Leader>l   :nohlsearch<CR>
 nnoremap   <Leader>v   :vsplit $MYVIMRC<CR>
 nnoremap   <Leader>V   :source $MYVIMRC<CR>
 
-" let g:bufExplorerShowRelativePath=1
-" let g:bufExplorerSortBy='name'
-
 " let g:slime_target='tmux'
 "
 " let g:tagbar_left=1
