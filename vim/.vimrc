@@ -123,14 +123,13 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_min_num_identifier_candidate_chars=4
 let g:ycm_seed_identifiers_with_syntax=1
-nnoremap <Leader>pc :YcmCompleter GoToDeclaration<CR>
-nnoremap <Leader>pd :YcmCompleter GoToDefinition<CR>
-nnoremap <Leader>pg :YcmCompleter GoTo<CR>
-nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
+nnoremap <Leader>yc :YcmForceCompileAndDiagnostics<CR>
+nnoremap <Leader>yg :YcmCompleter GoTo<CR>
+nnoremap <Leader>yr :YcmCompleter ClearCompilationFlagCache<CR>
 
-nnoremap   <Leader>l   :nohlsearch<CR>
-nnoremap   <Leader>v   :vsplit $MYVIMRC<CR>
-nnoremap   <Leader>V   :source $MYVIMRC<CR>
+nnoremap <Leader>l :nohlsearch<CR>
+nnoremap <Leader>v :vsplit $MYVIMRC<CR>
+nnoremap <Leader>V :source $MYVIMRC<CR>
 
 " let g:slime_target='tmux'
 "
