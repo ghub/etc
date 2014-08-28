@@ -117,7 +117,7 @@ let g:syntastic_warning_symbol='⚠'
 
 let g:tagbar_left=1
 let g:tagbar_sort=0
-nnoremap <Leader>t :TagbarToggle<CR>
+nnoremap <Leader>t :TagbarToggle<CR><C-W>=
 
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
