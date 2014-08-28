@@ -108,6 +108,10 @@ cnoremap   <C-K>       <Up>
 " nnoremap   <Leader>f   :GHPH<CR>
 " nnoremap   <Leader>g   g<C-]>
 
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_min_num_identifier_candidate_chars=4
@@ -127,9 +131,7 @@ nnoremap   <Leader>V   :source $MYVIMRC<CR>
 let g:ctrlp_max_files=0
 " let g:ctrlp_match_window='max:30'
 " let g:slime_target='tmux'
-" let g:syntastic_always_populate_loc_list=1
-" let g:syntastic_error_symbol='✗'
-" let g:syntastic_warning_symbol='⚠'
+"
 " let g:tagbar_left=1
 " let g:tagbar_sort=0
 " "let g:UltiSnipsExpandTrigger="<C-s>"
