@@ -115,6 +115,8 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+let g:tagbar_left=1
+let g:tagbar_sort=0
 nnoremap <Leader>t :TagbarToggle<CR>
 
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -132,8 +134,6 @@ nnoremap   <Leader>V   :source $MYVIMRC<CR>
 
 " let g:slime_target='tmux'
 "
-" let g:tagbar_left=1
-" let g:tagbar_sort=0
 " "let g:UltiSnipsExpandTrigger="<C-s>"
 " "let g:UltiSnipsJumpForwardTrigger="A-f"
 " "let g:UltiSnipsJumpBackwardTrigger="A-b"
