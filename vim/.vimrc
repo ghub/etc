@@ -115,6 +115,8 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+nnoremap <Leader>t :TagbarToggle<CR>
+
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_min_num_identifier_candidate_chars=4
@@ -124,7 +126,6 @@ nnoremap <Leader>pd :YcmCompleter GoToDefinition<CR>
 nnoremap <Leader>pg :YcmCompleter GoTo<CR>
 nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
 
-" nnoremap   <Leader>t   :TagbarToggle<CR>
 nnoremap   <Leader>l   :nohlsearch<CR>
 nnoremap   <Leader>v   :vsplit $MYVIMRC<CR>
 nnoremap   <Leader>V   :source $MYVIMRC<CR>
