@@ -1,7 +1,7 @@
 --c++-kinds=+p
 --extra=+q
 --fields=+aiS
---languages=C,C++
+--languages=-javascript,sql
 --recurse=yes
 --sort=foldcase
 --tag-relative=yes
