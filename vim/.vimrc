@@ -15,17 +15,17 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ghub/copycppdectoimp.vim'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'SirVer/ultisnips'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-dispatch'
@@ -64,6 +64,7 @@ set ignorecase
 set lazyredraw
 set list
 set matchtime=2
+"set noswapfile
 set number
 set report=0
 set shortmess=atI
@@ -131,12 +132,12 @@ nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 nnoremap <Leader>V :source $MYVIMRC<CR>
 
-" let g:slime_target='tmux'
-"
-" "let g:UltiSnipsExpandTrigger="<C-s>"
-" "let g:UltiSnipsJumpForwardTrigger="A-f"
-" "let g:UltiSnipsJumpBackwardTrigger="A-b"
-" "let g:UltiSnipsListSnippets="<A-s>"
+set runtimepath+=~/etc
+let g:UltiSnipsSnippetsDir="~/etc/UltiSnips"
+let g:UltiSnipsExpandTrigger="<F1>"
+"let g:UltiSnipsJumpForwardTrigger="A-f"
+"let g:UltiSnipsJumpBackwardTrigger="A-b"
+let g:UltiSnipsListSnippets="<F2>"
 
 autocmd VimResized * wincmd =
 
