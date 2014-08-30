@@ -1,0 +1,50 @@
+snippet po "#prama once" b
+#pragma once
+endsnippet
+
+snippet cc "Copy constructor" b
+	${1:Class}(const $1&$2);
+endsnippet
+
+snippet ao "Assignment operator" b
+	${1:Class}& operator=(const $1&$2);
+endsnippet
+
+snippet class "Class" b
+class ${1:Class}
+{
+public:
+	explicit $1();
+	virtual ~$1();
+
+private:
+	$1(const $1&);
+	$1& operator=(const $1&);
+};
+endsnippet
+
+snippet h "Class.h" b
+class ${1:Class}
+{
+public:
+	explicit $1();
+	virtual ~$1();
+
+private:
+	$1(const $1&);
+	$1& operator=(const $1&);
+};
+endsnippet
+
+snippet cpp "Class.cpp" b
+#include <${1:Class}.h>
+
+$1:$1()
+{
+}
+
+$1:~$1()
+{
+}
+endsnippet
+
