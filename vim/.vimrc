@@ -135,10 +135,10 @@ nnoremap <Leader>V :source $MYVIMRC<CR>
 
 set runtimepath+=~/etc
 let g:UltiSnipsSnippetsDir="~/etc/UltiSnips"
-let g:UltiSnipsExpandTrigger="<F1>"
-"let g:UltiSnipsJumpForwardTrigger="A-f"
-"let g:UltiSnipsJumpBackwardTrigger="A-b"
-let g:UltiSnipsListSnippets="<F2>"
+let g:UltiSnipsExpandTrigger="<C-D>"
+let g:UltiSnipsJumpBackwardTrigger="<C-B>"
+let g:UltiSnipsJumpForwardTrigger="<C-F>"
+let g:UltiSnipsListSnippets="<C-T>"
 
 autocmd VimResized * wincmd =
 
