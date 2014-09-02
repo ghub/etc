@@ -11,7 +11,6 @@ set nocompatible
 " { Plugins
 
 filetype off
-
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -50,10 +49,14 @@ Plugin 'vim-scripts/vim-auto-save'
 call vundle#end()
 filetype on
 
+augroup vimrc
+    autocmd!
+augroup END
+
 " runtime! ftplugin/man.vim
 
 " Plugin 'ghub/copycppdectoimp.vim'
-nnoremap   <Leader>f   :GHPH<CR>
+nnoremap <Leader>f :GHPH<CR>
 
 " Plugin 'kien/ctrlp.vim'
 let g:ctrlp_max_files=0
@@ -62,7 +65,7 @@ let g:ctrlp_match_window='max:30'
 " Plugin 'majutsushi/tagbar'
 let g:tagbar_left=1
 let g:tagbar_sort=0
-nnoremap <Leader>t :TagbarToggle<CR><C-W>=
+nnoremap <Leader>tb :TagbarToggle<CR><C-W>=
 
 " Plugin 'scrooloose/nerdtree'
 " nnoremap   <C-E>       :NERDTreeToggle<CR>
@@ -109,6 +112,8 @@ set number
 set report=0
 set shortmess=atI
 set smartcase
+set exrc
+set secure
 
 colorscheme solarized
 
@@ -150,10 +155,9 @@ nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 nnoremap <Leader>V :source $MYVIMRC<CR>
 
-autocmd VimResized * wincmd =
-
-set exrc
-set secure
+augroup vimrc
+    autocmd VimResized * wincmd =
+augroup END
 
 if filereadable(expand('~/.vimrc.local'))
     source ~/.vimrc.local
