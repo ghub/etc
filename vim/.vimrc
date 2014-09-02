@@ -117,15 +117,18 @@ set secure
 
 colorscheme solarized
 
-     map <Space> \
-inoremap jk      <Esc>
-vnoremap jk      <Esc>
-cnoremap jk      <Esc>
+map <Space> \
 
-" nnoremap   `    '
+inoremap jk <Esc>
+vnoremap jk <Esc>
+cnoremap jk <Esc>
+
 nnoremap ; :
+vnoremap ; :
 
-" nnoremap   '    `
+nnoremap ` '
+nnoremap ' `
+
 " nnoremap   g,   g,zz
 " nnoremap   g;   g;zz
 " nnoremap   j    gj
@@ -136,8 +139,6 @@ nnoremap ; :
 " nnoremap   Y    y$
 " nnoremap   *    *zzzv
 " nnoremap   #    #zzzv
-" vnoremap   ;    :
-" vnoremap   :    ;
 " vnoremap   <    <gv
 " vnoremap   >    >gv
 
