@@ -119,39 +119,31 @@ colorscheme solarized
 
 map <Space> \
 
+cnoremap jk <Esc>
 inoremap jk <Esc>
 vnoremap jk <Esc>
-cnoremap jk <Esc>
 
-nnoremap ; :
-vnoremap ; :
+nnoremap ;  :
+vnoremap ;  :
 
-nnoremap ` '
-nnoremap ' `
+nnoremap `  '
+nnoremap '  `
+nnoremap g, g,zz
+nnoremap g; g;zz
+nnoremap j  gj
+nnoremap k  gk
+nnoremap N  Nzzzv
+nnoremap Q  gq
+nnoremap Y  y$
+nnoremap *  *zzzv
+nnoremap #  #zzzv
+vnoremap <  <gv
+vnoremap >  >gv
 
-" nnoremap   g,   g,zz
-" nnoremap   g;   g;zz
-" nnoremap   j    gj
-" nnoremap   k    gk
-" nnoremap   N    Nzzzv
-" nnoremap   n    nzzzv
-" nnoremap   Q    gq
-" nnoremap   Y    y$
-" nnoremap   *    *zzzv
-" nnoremap   #    #zzzv
-" vnoremap   <    <gv
-" vnoremap   >    >gv
+cnoremap <C-J> <Down>
+cnoremap <C-K> <Up>
 
-cnoremap   <C-J>       <Down>
-cnoremap   <C-K>       <Up>
-
-"nnoremap   <C-Up>      <C-W>k<C-W>_
-"nnoremap   <C-Down>    <C-W>j<C-W>_
-"nnoremap   <C-Left>    <C-W>h<C-W>_
-"nnoremap   <C-Right>   <C-W>l<C-W>_
-
-"nnoremap   <Leader>g   g<C-]>
-
+nnoremap <Leader>g g<C-]>
 nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 nnoremap <Leader>V :source $MYVIMRC<CR>
