@@ -107,13 +107,13 @@ set ignorecase
 set lazyredraw
 set list
 set matchtime=2
-"set noswapfile
 set number
 set report=0
 set shortmess=atI
 set smartcase
 set exrc
 set secure
+set wildmode=longest,list,full
 
 colorscheme solarized
 
