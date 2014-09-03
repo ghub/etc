@@ -49,10 +49,6 @@ Plugin 'vim-scripts/vim-auto-save'
 call vundle#end()
 filetype on
 
-augroup vimrc
-    autocmd!
-augroup END
-
 " runtime! ftplugin/man.vim
 
 " Plugin 'ghub/copycppdectoimp.vim'
@@ -68,8 +64,8 @@ let g:tagbar_sort=0
 nnoremap <Leader>tb :TagbarToggle<CR><C-W>=
 
 " Plugin 'scrooloose/nerdtree'
-" nnoremap   <C-E>       :NERDTreeToggle<CR>
-" nnoremap   <Leader>e   :NERDTreeFind<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <Leader>nf :NERDTreeFind<CR>
 
 " Plugin 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list=1
@@ -98,9 +94,10 @@ nnoremap <Leader>yr :YcmCompleter ClearCompilationFlagCache<CR>
 set background=dark
 set colorcolumn=+1
 set cursorline
-" set formatoptions+=j
-" set formatoptions-=o
-" set formatoptions-=r
+set exrc
+set formatoptions+=j
+set formatoptions-=o
+set formatoptions-=r
 set gdefault
 set hlsearch
 set ignorecase
@@ -109,10 +106,9 @@ set list
 set matchtime=2
 set number
 set report=0
+set secure
 set shortmess=atI
 set smartcase
-set exrc
-set secure
 set wildmode=longest,list,full
 
 colorscheme solarized
@@ -128,27 +124,36 @@ vnoremap ;  :
 
 nnoremap `  '
 nnoremap '  `
-nnoremap g, g,zz
-nnoremap g; g;zz
-nnoremap j  gj
-nnoremap k  gk
-nnoremap N  Nzzzv
-nnoremap Q  gq
-nnoremap Y  y$
-nnoremap *  *zzzv
-nnoremap #  #zzzv
+
 vnoremap <  <gv
 vnoremap >  >gv
+
+nnoremap g, g,zz
+nnoremap g; g;zz
+
+nnoremap j  gj
+nnoremap k  gk
+
+nnoremap *  *zzzv
+nnoremap #  #zzzv
+nnoremap n  nzzzv
+nnoremap N  Nzzzv
+
+nnoremap Q  gqap
+vnoremap Q  gq
+
+nnoremap Y  y$
 
 cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
 nnoremap <Leader>g g<C-]>
 nnoremap <Leader>l :nohlsearch<CR>
-nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 nnoremap <Leader>V :source $MYVIMRC<CR>
+nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 
 augroup vimrc
+    autocmd!
     autocmd VimResized * wincmd =
 augroup END
 
