@@ -49,7 +49,7 @@ Plugin 'vim-scripts/vim-auto-save'
 call vundle#end()
 filetype on
 
-" runtime! ftplugin/man.vim
+runtime! ftplugin/man.vim
 
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>f :GHPH<CR>
