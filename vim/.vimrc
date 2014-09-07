@@ -152,6 +152,10 @@ nnoremap <Leader>af yiw/\/\/ C<Esc>jOclass ;<Esc>P
 nnoremap <Leader>aI yiw/\/\/ Q<Esc>jO#include <><Esc>P
 nnoremap <Leader>ai yiw/\/\/ C<Esc>jO#include <.h><Esc>B<Esc>p
 
+nnoremap <Leader>md yy/};$<Esc>P<<$BwC_;<Esc>
+nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>>>
+nnoremap <Leader>mi yy/{$<Esc>P$xbd^dwa, ()<Esc>P%Pa_<Esc>>>
+
 nnoremap <Leader>ff :Ggrep! <cword><CR><CR>
 nnoremap <Leader>fc :Ggrep! -w "public <cword>"<CR><CR>
 nnoremap <Leader>fh :Ggrep! -w "new <cword>"<CR><CR>
