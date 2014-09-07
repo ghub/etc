@@ -147,10 +147,10 @@ nnoremap Y  y$
 cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
-nnoremap <Leader>aF yiw/\/\/ Q<Esc>oclass ;<Esc>P
-nnoremap <Leader>af yiw/\/\/ C<Esc>oclass ;<Esc>P
-nnoremap <Leader>aI yiw/\/\/ Q<Esc>o#include <><Esc>P
-nnoremap <Leader>ai yiw/\/\/ C<Esc>o#include <.h><Esc>B<Esc>p
+nnoremap <Leader>aF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
+nnoremap <Leader>af yiw/\/\/ C<Esc>jOclass ;<Esc>P
+nnoremap <Leader>aI yiw/\/\/ Q<Esc>jO#include <><Esc>P
+nnoremap <Leader>ai yiw/\/\/ C<Esc>jO#include <.h><Esc>B<Esc>p
 
 nnoremap <Leader>ff :Ggrep! <cword><CR><CR>
 nnoremap <Leader>fc :Ggrep! -w "public <cword>"<CR><CR>
