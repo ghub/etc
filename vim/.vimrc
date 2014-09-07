@@ -52,7 +52,7 @@ filetype on
 runtime! ftplugin/man.vim
 
 " Plugin 'ghub/copycppdectoimp.vim'
-nnoremap <Leader>f :GHPH<CR>
+nnoremap <Leader>h :GHPH<CR>
 
 " Plugin 'kien/ctrlp.vim'
 let g:ctrlp_max_files=0
