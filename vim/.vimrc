@@ -75,7 +75,7 @@ let g:syntastic_warning_symbol='⚠'
 " Plugin 'SirVer/ultisnips'
 set runtimepath+=~/etc
 let g:UltiSnipsSnippetsDir="~/etc/UltiSnips"
-let g:UltiSnipsExpandTrigger="<C-D>"
+let g:UltiSnipsExpandTrigger="<C-S>"
 let g:UltiSnipsJumpBackwardTrigger="<C-B>"
 let g:UltiSnipsJumpForwardTrigger="<C-F>"
 let g:UltiSnipsListSnippets="<C-T>"
