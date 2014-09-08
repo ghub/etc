@@ -80,6 +80,9 @@ let g:UltiSnipsJumpBackwardTrigger="<C-B>"
 let g:UltiSnipsJumpForwardTrigger="<C-F>"
 let g:UltiSnipsListSnippets="<C-T>"
 
+"Plugin 'tpope/vim-projectionist'
+nnoremap <Leader>a :A<CR>
+
 " Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_extra_conf_globlist=['~/ws/*']
@@ -148,10 +151,10 @@ nnoremap Y  y$
 cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
-nnoremap <Leader>aF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
-nnoremap <Leader>af yiw/\/\/ C<Esc>jOclass ;<Esc>P
-nnoremap <Leader>aI yiw/\/\/ Q<Esc>jO#include <><Esc>P
-nnoremap <Leader>ai yiw/\/\/ C<Esc>jO#include <.h><Esc>B<Esc>p
+nnoremap <Leader>iF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
+nnoremap <Leader>if yiw/\/\/ C<Esc>jOclass ;<Esc>P
+nnoremap <Leader>iI yiw/\/\/ Q<Esc>jO#include <><Esc>P
+nnoremap <Leader>ii yiw/\/\/ C<Esc>jO#include <.h><Esc>B<Esc>p
 
 nnoremap <Leader>md yy/};$<Esc>P<<$BwC_;<Esc>
 nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>>>
