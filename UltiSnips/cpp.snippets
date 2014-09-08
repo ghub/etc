@@ -2,6 +2,14 @@ snippet po "#prama once" b
 #pragma once
 endsnippet
 
+snippet ft "template<> class" b
+template<typename> class ${1:Class};
+endsnippet
+
+snippet in "#include" b
+#include <${1:Header.h}>
+endsnippet
+
 snippet cc "Copy constructor" b
 	${1:Class}(const $1&$2);
 endsnippet
@@ -10,7 +18,7 @@ snippet ao "Assignment operator" b
 	${1:Class}& operator=(const $1&$2);
 endsnippet
 
-snippet class "Class" b
+snippet cl "Class" b
 class ${1:Class}
 {
 public:
@@ -23,7 +31,32 @@ private:
 };
 endsnippet
 
+snippet ic "Interface class" b
+class ${1:Class}
+{
+public:
+	virtual ~$1() = 0;
+};
+endsnippet
+
+snippet sc "Sub-class" b
+#include <$2.h>
+
+class ${1:Class} : public ${2:BaseClass}
+{
+public:
+	explicit $1();
+	virtual ~$1();
+
+private:
+	$1(const $1&);
+	$1& operator=(const $1&);
+};
+endsnippet
+
 snippet h "Class.h" b
+#pragma once
+
 class ${1:Class}
 {
 public:
