@@ -151,6 +151,8 @@ nnoremap Y  y$
 cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
+nnoremap <F3> !}sort -fu<CR>
+
 nnoremap <Leader>iF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
 nnoremap <Leader>if yiw/\/\/ C<Esc>jOclass ;<Esc>P
 nnoremap <Leader>iI yiw/\/\/ Q<Esc>jO#include <><Esc>P
