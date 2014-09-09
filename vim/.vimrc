@@ -153,6 +153,9 @@ cnoremap <C-K> <Up>
 
 nnoremap <F3> !}sort -fu<CR>
 
+nnoremap <Leader>fv :s/virtual  *\(.*[^ ]\) *= *0 */\1/<CR>
+nnoremap <Leader>tv Ivirtual <Esc>$i = 0<Esc>
+
 nnoremap <Leader>iF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
 nnoremap <Leader>if yiw/\/\/ C<Esc>jOclass ;<Esc>P
 nnoremap <Leader>iI yiw/\/\/ Q<Esc>jO#include <><Esc>P
