@@ -152,6 +152,8 @@ cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
 nnoremap <F3> !}sort -fu<CR>
+nnoremap <F5> :cgetfile<CR>
+nnoremap <F6> :botright cwindow<CR>
 
 nnoremap <Leader>fv :s/virtual  *\(.*[^ ]\) *= *0 */\1/<CR>
 nnoremap <Leader>tv Ivirtual <Esc>$i = 0<Esc>
