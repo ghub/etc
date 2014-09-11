@@ -81,7 +81,7 @@ let g:UltiSnipsJumpForwardTrigger="<C-F>"
 let g:UltiSnipsListSnippets="<C-T>"
 
 "Plugin 'tpope/vim-projectionist'
-nnoremap <Leader>a :A<CR>
+nnoremap <Leader>a :A<CR>'"
 
 " Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_completion=1
