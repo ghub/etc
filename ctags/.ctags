@@ -1,6 +1,6 @@
 --c++-kinds=+p
 --extra=+q
---fields=+aiS
+--fields=+ailS
 --languages=-javascript,sql
 --recurse=yes
 --sort=foldcase
