@@ -155,8 +155,10 @@ nnoremap <F3> !}sort -fu<CR>
 nnoremap <F5> :cgetfile<CR>
 nnoremap <F6> :botright cwindow<CR>
 
-nnoremap <Leader>fv :s/virtual  *\(.*[^ ]\) *= *0 */\1/<CR>
-nnoremap <Leader>tv Ivirtual <Esc>$i = 0<Esc>
+nnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
+vnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
+nnoremap <Leader>tv :.g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
+"vnoremap <Leader>tv :g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
 
 nnoremap <Leader>iF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
 nnoremap <Leader>if yiw/\/\/ C<Esc>jOclass ;<Esc>P
