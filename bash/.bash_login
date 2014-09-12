@@ -1,21 +1,25 @@
+#!/bin/bash -e
 
-if [ -f ~/.profile ]; then
-    . ~/.profile
-fi
+source_profile()
+{
+    if [ -f $1 ]; then
+        . $1
+    fi
+}
 
 source_profiles()
 {
     if [ -d $1 ]; then
         for i in $1/*.sh; do
-            if [ -r $i ]; then
-                . $i
-            fi
+            source_profile $i
         done
         unset i
     fi
 }
 
+source_profile ~/.profile
 source_profiles ~/etc/profile.d
 source_profiles ~/etc.local/profile.d
 
+unset source_profile
 unset source_profiles
