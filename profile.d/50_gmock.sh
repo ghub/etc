@@ -1,4 +1,6 @@
 #!/bin/sh -e
 
-PATH=$PATH:~/repo/gmock
-export PATH
+gmock()
+{
+    LD_LIBRARY_PATH=/usr/lib/llvm-3.4/lib python ~/repo/gmock/gmock.py "$@"
+}
