@@ -7,7 +7,6 @@ git
 pentadactyl
 readline
 tmux
-tmuxp
 urxvt
 vim
 "
