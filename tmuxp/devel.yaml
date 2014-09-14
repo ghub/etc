@@ -1,6 +1,12 @@
-session_name: 2-pane-vertial
+session_name: devel
+start_directory: ws/devel
 windows:
-  - window_name: my test window
-    panes:
-      - pwd
-      - pwd
+ - window_name: console
+   panes:
+     -
+ - window_name: editor
+   panes:
+     -
+ - window_name: compiler
+   panes:
+     -
