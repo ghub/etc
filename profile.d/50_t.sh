@@ -2,5 +2,5 @@
 
 t()
 {
-    python ~/repo/t/t.py --task-dir ~ --list TODO $@
+    python ~/repo/t/t.py --task-dir ~ --list TODO "$@"
 }
