@@ -1,0 +1,7 @@
+session_name: admin
+windows:
+ - window_name: console
+   layout: even-horizontal
+   panes:
+     - focus: true
+     -
