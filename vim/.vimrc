@@ -153,7 +153,7 @@ cnoremap <C-K> <Up>
 
 nnoremap <F2> :%s/\s\+$//<cr>
 nnoremap <F3> !}sort -fu<CR>
-nnoremap <F5> :cgetfile<CR>
+nnoremap <F5> :set errorfile&<CR>:cgetfile<CR>
 nnoremap <F6> :botright cwindow<CR>
 
 nnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
