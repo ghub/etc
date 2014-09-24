@@ -164,10 +164,10 @@ vnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
 nnoremap <Leader>tv :.g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
 "vnoremap <Leader>tv :g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
 
-nnoremap <Leader>iF yiw/\/\/ Q<Esc>jOclass ;<Esc>P
-nnoremap <Leader>if yiw/\/\/ C<Esc>jOclass ;<Esc>P
-nnoremap <Leader>iI yiw/\/\/ Q<Esc>jO#include <><Esc>P
-nnoremap <Leader>ii yiw/\/\/ C<Esc>jO#include <.h><Esc>B<Esc>p
+nnoremap <Leader>iF yiw/^\/\/\s*Q<Esc>jOclass ;<Esc>P
+nnoremap <Leader>if yiw/^\/\/\s*C<Esc>jOclass ;<Esc>P
+nnoremap <Leader>iI yiw/^\/\/\s*Q<Esc>jO#include <><Esc>P
+nnoremap <Leader>ii yiw/^\/\/\s*C<Esc>jO#include <.h><Esc>B<Esc>p
 
 nnoremap <Leader>md yy/};$<Esc>P<<$BwC_;<Esc>
 nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>>>
