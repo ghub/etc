@@ -151,11 +151,13 @@ nnoremap Y  y$
 cnoremap <C-J> <Down>
 cnoremap <C-K> <Up>
 
-nnoremap <F2> :%s/\s\+$//<cr>
-nnoremap <F3> !}sort -fu<CR>
-nnoremap <F5> :set errorfile&<CR>:cgetfile<CR>
-nnoremap <F6> :botright cwindow<CR>
-nnoremap <F9> :Dispatch<CR>
+nnoremap <F2>  :%s/\s\+$//<cr>
+nnoremap <F3>  !}sort -fu<CR>
+nnoremap <F5>  :set errorfile&<CR>:cgetfile<CR>
+nnoremap <F6>  :botright cwindow<CR>
+nnoremap <F8>  :Make<CR>
+nnoremap <F9>  :Dispatch<CR>
+nnoremap <F10> :Start<CR>
 
 nnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
 vnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
