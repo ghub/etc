@@ -109,6 +109,7 @@ set lazyredraw
 set list
 set matchtime=2
 set number
+set path+=**
 set report=0
 set secure
 set shortmess=atI
