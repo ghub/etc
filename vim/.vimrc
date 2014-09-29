@@ -15,6 +15,7 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ghub/copycppdectoimp.vim'
 Plugin 'gmarik/Vundle.vim'
@@ -50,6 +51,23 @@ call vundle#end()
 filetype on
 
 runtime! ftplugin/man.vim
+
+" Plugin 'Chiel92/vim-autoformat'
+let g:formatprg_args_cpp="--options=.astylerc"
+"--add-brackets
+"--align-pointer=type
+"--break-blocks
+"--convert-tabs
+"--indent-col1-comments
+"--indent-preproc-define
+"--indent=spaces=3
+"--indent-switches
+"--max-code-length=120
+"--pad-header
+"--pad-oper
+"--style=ansi
+"--suffix=none
+"--unpad-paren
 
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
@@ -154,6 +172,7 @@ cnoremap <C-K> <Up>
 
 nnoremap <F2>  :%s/\s\+$//<cr>
 nnoremap <F3>  !}sort -fu<CR>
+nnoremap <F4>  :Autoformat<CR>
 nnoremap <F5>  :set errorfile&<CR>:cgetfile<CR>
 nnoremap <F6>  :botright cwindow<CR>
 nnoremap <F8>  :Make<CR>
