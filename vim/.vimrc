@@ -59,8 +59,9 @@ let g:formatprg_args_cpp="--options=.astylerc"
 nnoremap <Leader>h :GHPH<CR>
 
 " Plugin 'kien/ctrlp.vim'
-let g:ctrlp_max_files=0
+let g:ctrlp_lazy_update=1
 let g:ctrlp_match_window='max:30'
+let g:ctrlp_max_files=0
 
 " Plugin 'majutsushi/tagbar'
 let g:tagbar_left=1
