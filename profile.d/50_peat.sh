@@ -1,4 +1,4 @@
 #!/bin/sh -e
 
-PATH=$PATH:~/repo/peat
+PATH=~/repo/peat:$PATH
 export PATH
