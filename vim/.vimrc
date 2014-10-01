@@ -53,7 +53,7 @@ filetype on
 runtime! ftplugin/man.vim
 
 " Plugin 'Chiel92/vim-autoformat'
-let g:formatprg_args_cpp="--options=.astylerc"
+let g:formatprg_args_cpp='--options=.astylerc'
 
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
@@ -80,11 +80,11 @@ let g:syntastic_warning_symbol='⚠'
 
 " Plugin 'SirVer/ultisnips'
 set runtimepath+=~/etc
-let g:UltiSnipsSnippetsDir="~/etc/UltiSnips"
-let g:UltiSnipsExpandTrigger="<C-S>"
-let g:UltiSnipsJumpBackwardTrigger="<C-B>"
-let g:UltiSnipsJumpForwardTrigger="<C-F>"
-let g:UltiSnipsListSnippets="<C-T>"
+let g:UltiSnipsSnippetsDir='~/etc/UltiSnips'
+let g:UltiSnipsExpandTrigger='<C-S>'
+let g:UltiSnipsJumpBackwardTrigger='<C-B>'
+let g:UltiSnipsJumpForwardTrigger='<C-F>'
+let g:UltiSnipsListSnippets='<C-T>'
 
 "Plugin 'tpope/vim-projectionist'
 nnoremap <Leader>a :A<CR>'"
