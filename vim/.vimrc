@@ -62,6 +62,7 @@ nnoremap <Leader>h :GHPH<CR>
 let g:ctrlp_lazy_update=1
 let g:ctrlp_match_window='max:30'
 let g:ctrlp_max_files=0
+let g:ctrlp_user_command=['.git', 'cd %s && git_ls_files.sh']
 
 " Plugin 'majutsushi/tagbar'
 let g:tagbar_left=1
