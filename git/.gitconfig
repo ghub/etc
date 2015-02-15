@@ -1,0 +1,9 @@
+[alias]
+	ctags = "!sh -c '[ -f .git/hooks/ctags.sh ] || git init; .git/hooks/ctags.sh' git-ctags"
+[init]
+	templatedir = ~/.git_template
+[push]
+	default = simple
+[user]
+	name = Ge Wang
+	email = code.gewang@gmai"l.co"m
