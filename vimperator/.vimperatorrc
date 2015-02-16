@@ -1,0 +1,10 @@
+"3.8.3 (created: 2014/11/09 13:19:01)
+
+noremap ; :
+noremap : ;
+
+set hintchars=asdfghjkl;
+set hlsearch
+set toolbars=menu,tabs
+
+" vim: set ft=vimperator:
