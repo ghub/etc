@@ -6,7 +6,7 @@ map -modes=n <Space>l -builtin :silent nohlfind<CR>
 map -modes=n,v ; -builtin :
 map -modes=n,v : -builtin ;
 
-set hintkeys=asdfg;lkjh
+set hintkeys=asdfghjkl;
 set hlfind
 
 " vim: set ft=pentadactyl:
