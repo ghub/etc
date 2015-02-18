@@ -1,22 +1,24 @@
 #!/bin/sh -e
 
 dir="`git rev-parse --git-dir`"
-tmp=$dir/$$.includes
-deps="
-.
-"
+tmp_file=$dir/$$.includes
+deps_file=$dir/deps
 
-trap 'rm -f $tmp' EXIT
+if [ -f $deps_file ]; then
+    deps="`cat $deps_file`"
+fi
+
+deps=". $deps"
+
+trap 'rm -f $tmp_file' EXIT
 
 (
-for each in $deps; do
-    find $each -type f -name "*.h" -o -name "*.moc" | xargs dirname
-    find $each -type d -name include
-done
+find $deps -type f -name "*.h" -o -name "*.moc" | xargs dirname
+find $deps -type d -name include
 ) |
 grep -Evw "arm|mkspecs|win" |
 sed -e "s|^\./||" |
-sort -u > $tmp
+sort -u > $tmp_file
 
-mv $tmp $dir/includes
+mv $tmp_file $dir/includes
 

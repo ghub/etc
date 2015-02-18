@@ -1,14 +1,24 @@
 #!/bin/sh -e
 
 dir="`git rev-parse --git-dir`"
-tmp=$dir/$$.tags
+tmp_file=$dir/$$.tags
+deps_file=$dir/deps
 
-trap 'rm -f $tmp' EXIT
+if [ -f $deps_file ]; then
+    deps="`cat $deps_file`"
+fi
 
-git ls-files |
+trap 'rm -f $tmp_file' EXIT
+
+(
+git ls-files
+if [ -n "$deps" ]; then
+    find $deps -type f
+fi
+) |
 ctags \
     -L - \
-    -o $tmp \
+    -o $tmp_file \
 
-mv $tmp $dir/tags
+mv $tmp_file $dir/tags
 
