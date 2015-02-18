@@ -1,14 +1,14 @@
 #!/bin/sh -e
 
 dir="`git rev-parse --git-dir`"
-tmp_tags=$dir/$$.tags
+tmp=$dir/$$.tags
 
-trap 'rm -f $tmp_tags' EXIT
+trap 'rm -f $tmp' EXIT
 
 git ls-files |
 ctags \
     -L - \
-    -o $tmp_tags \
+    -o $tmp \
 
-mv $tmp_tags $dir/tags
+mv $tmp $dir/tags
 
