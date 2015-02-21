@@ -101,6 +101,7 @@ nnoremap <Leader>yr :YcmCompleter ClearCompilationFlagCache<CR>
 
 " }
 
+set autowrite
 set background=dark
 set colorcolumn=+1
 set cursorline
