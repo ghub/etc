@@ -24,7 +24,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'sjl/gundo.vim'
@@ -42,6 +41,7 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-vinegar'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/argtextobj.vim'
@@ -69,10 +69,6 @@ let g:ctrlp_user_command=['.git', 'cd %s && git_ls_files.sh']
 let g:tagbar_left=1
 let g:tagbar_sort=0
 nnoremap <Leader>tb :TagbarToggle<CR><C-W>=
-
-" Plugin 'scrooloose/nerdtree'
-nnoremap <Leader>nt :NERDTreeToggle<CR>
-nnoremap <Leader>nf :NERDTreeFind<CR>
 
 " Plugin 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list=1
