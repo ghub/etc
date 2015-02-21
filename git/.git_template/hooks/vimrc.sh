@@ -8,7 +8,7 @@ if [ -f $deps_file ]; then
 fi
 
 (
-echo set nowrap
+cat $dir/vimrc
 for each in $deps; do
     echo set "path+=$each/**"
 done
