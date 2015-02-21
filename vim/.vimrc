@@ -105,7 +105,6 @@ set background=dark
 set colorcolumn=+1
 set cursorline
 set exrc
-set formatoptions+=j
 set formatoptions-=o
 set formatoptions-=r
 set gdefault
