@@ -162,7 +162,8 @@ nnoremap <F2>  :%s/\s\+$//<cr>
 nnoremap <F3>  !}sort -fu<CR>
 nnoremap <F4>  :Autoformat<CR>
 nnoremap <F5>  :set errorfile&<CR>:cgetfile<CR>
-nnoremap <F7>  :botright cwindow<CR>
+nnoremap <F6>  :botright cwindow<CR>
+nnoremap <F7>  :Gstatus<Bar>wincmd K<CR>
 nnoremap <F8>  :Make<CR>
 nnoremap <F9>  :Dispatch<CR>
 nnoremap <F10> :Start<CR>
