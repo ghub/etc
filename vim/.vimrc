@@ -117,6 +117,7 @@ set number
 set path+=**
 set report=0
 set secure
+set shiftround
 set shortmess=atI
 set smartcase
 set wildmode=longest,list,full
