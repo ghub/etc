@@ -46,6 +46,12 @@ flags = [
 '/usr/include',
 ]
 
+includes_file = '.git/includes'
+
+if os.path.exists( includes_file ):
+  with open( includes_file ) as f:
+    for line in f.readlines():
+      flags += [ '-I', line.strip('\n') ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
 # compile_commands.json file to use that instead of 'flags'. See here for
