@@ -1,5 +1,5 @@
 [alias]
-	ctags = "!sh -c '[ -f .git/hooks/ctags.sh ] || git init; .git/hooks/ctags.sh' git-ctags"
+	rehook = "!rm -rf .git/hooks && git init && .git/hooks/post-commit"
 [core]
 	excludesfile = ~/.gitignore
 [init]
