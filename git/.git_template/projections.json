@@ -1,0 +1,7 @@
+{
+  "*": {
+    "dispatch": "dispatch.sh {}",
+  },
+  "*.cpp": {"alternate": "{}.h"},
+  "*.h": {"alternate": "{}.cpp"}
+}
