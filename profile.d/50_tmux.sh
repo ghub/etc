@@ -1,17 +1,15 @@
 #!/bin/sh -e
 
-hash tmuxp.bash 2>/dev/null && . tmuxp.bash
-
-_tmuxp.sh()
+_tmux.sh()
 {
     local cur prev words cword
     _init_completion || return
 
     COMPREPLY=( $( compgen -W "$( \
-        find ~/etc*/tmuxp.d -type f |
+        find ~/etc*/tmux.d -type f |
         xargs -n1 basename |
-        sed -e "s/\.yaml$//" |
+        sed -e "s/\.tmux$//" |
         sort -u \
         )" -- "$cur" ) )
 } &&
-complete -F _tmuxp.sh tmuxp.sh
+complete -F _tmux.sh tmux.sh
