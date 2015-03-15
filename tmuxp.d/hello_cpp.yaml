@@ -1,5 +1,5 @@
 session_name: hello_cpp
-start_directory: ws/hello/cpp
+start_directory: ws/trial/hello/cpp
 windows:
 - layout: main-vertical
   options:

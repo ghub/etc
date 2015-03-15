@@ -1,5 +1,5 @@
 session_name: euler
-start_directory: ws/euler
+start_directory: ws/drill/euler
 windows:
 - shell_command_before:
     - . bin/env.sh
