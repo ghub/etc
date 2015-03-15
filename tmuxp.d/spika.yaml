@@ -1,0 +1,23 @@
+session_name: spika
+start_directory: ws/trial
+windows:
+ - window_name: console
+   start_directory: Spika/Spika-Android
+   panes:
+     -
+ - window_name: ide
+   start_directory: Spika/Spika-Android
+   panes:
+     - studio.sh
+ - window_name: server
+   start_directory: Spika-Server
+   layout: tiled
+   panes:
+     -
+     - shell_command:
+        - schroot.sh --user root
+        - service apache2 restart
+     -
+     - shell_command:
+        - schroot.sh --user root
+        - service mysql restart
