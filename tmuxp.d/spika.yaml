@@ -11,13 +11,10 @@ windows:
      - studio.sh
  - window_name: server
    start_directory: Spika-Server
-   layout: tiled
+   layout: even-horizontal
    panes:
      -
      - shell_command:
         - schroot.sh --user root
         - service apache2 restart
-     -
-     - shell_command:
-        - schroot.sh --user root
         - service mysql restart
