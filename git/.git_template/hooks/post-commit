@@ -1,5 +1,9 @@
 #!/bin/sh
 
+for each in .git/*.sh; do
+    $each >/dev/null 2>&1
+done
+
 for each in .git/hooks/*.sh; do
     $each >/dev/null 2>&1 &
 done
