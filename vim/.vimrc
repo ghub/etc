@@ -167,6 +167,7 @@ nnoremap <F7>  :Gstatus<Bar>wincmd K<CR>
 nnoremap <F8>  :Make<CR>
 nnoremap <F9>  :Dispatch<CR>
 nnoremap <F10> :Start<CR>
+nnoremap <F12> :!git_pull.sh --rebase<CR>
 
 nnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
 vnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
