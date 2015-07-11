@@ -1,1 +1,2 @@
+set makeprg=make.sh\ %
 set nowrap

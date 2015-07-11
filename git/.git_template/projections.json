@@ -1,8 +1,4 @@
 {
   "*.cpp": {"alternate": "{}.h"},
   "*.h": {"alternate": "{}.cpp"},
-  "*": {
-    "dispatch": "-compiler=gcc make.sh {}",
-    "make": "make.sh {}",
-  },
 }
