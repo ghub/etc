@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+PRJ=`pwd`
+
+cd tool
+. env.sh
+cd - > /dev/null
+
+echo prjmake: Entering directory \'$PRJ\'
+"$@"
+echo prjmake: Leaving directory \'$PRJ\'
