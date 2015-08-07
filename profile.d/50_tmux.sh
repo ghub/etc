@@ -3,7 +3,12 @@
 _tmux.sh()
 {
     local cur prev words cword
-    _init_completion || return
+
+    if [ $( uname -s ) = Darwin ]; then
+        _get_comp_words_by_ref cur prev words cword || return
+    else
+        _init_completion || return
+    fi
 
     COMPREPLY=( $( compgen -W "$( \
         find ~/etc*/tmux.d -type f |
