@@ -8,7 +8,7 @@ create_link()
     (
         cd /usr/local/bin
         if [ ! -e $2 ]; then
-            ln -s $@
+            ln -s $1 $2
         fi
     )
 }
@@ -20,3 +20,5 @@ if [ $( uname -s ) = Darwin ]; then
     create_link mvimex vimex
     create_link vim vi
 fi
+
+unset create_link
