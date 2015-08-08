@@ -1,10 +1,14 @@
 "1.1
 
 map -modes=n <C-w> -builtin <Nop>
-map -modes=n d -builtin <Nop>
 map -modes=n <Space>l -builtin :silent nohlfind<CR>
-map -modes=n,v ; -builtin :
+map -modes=n d -builtin <Nop>
+map -modes=n [T -builtin :silent tabfirst<CR>
+map -modes=n [t -builtin :silent tabprevious<CR>
+map -modes=n ]T -builtin :silent tablast<CR>
+map -modes=n ]t -builtin :silent tabnext<CR>
 map -modes=n,v : -builtin ;
+map -modes=n,v ; -builtin :
 
 set hintkeys=asdfghjkl;
 set hlfind
