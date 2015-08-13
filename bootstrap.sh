@@ -2,6 +2,7 @@
 
 src="
 bash
+cgdb
 ctags
 git
 pentadactyl
