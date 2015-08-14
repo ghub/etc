@@ -1,0 +1,5 @@
+:highlight SelectedLineNr cterm=reverse
+:set arrowstyle=highlight
+:set ignorecase
+:set tabstop=4
+:set winsplit=top_big
