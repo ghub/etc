@@ -1,4 +1,3 @@
 #!/bin/sh -e
 
-PATH=~/bin:$PATH
-export PATH
+prepend_path ~/bin

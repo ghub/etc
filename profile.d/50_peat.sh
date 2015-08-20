@@ -1,4 +1,3 @@
 #!/bin/sh -e
 
-PATH=~/repo/peat:$PATH
-export PATH
+prepend_path ~/repo/peat

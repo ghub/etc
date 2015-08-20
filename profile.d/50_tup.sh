@@ -1,4 +1,3 @@
 #!/bin/sh -e
 
-PATH=~/repo/tup:$PATH
-export PATH
+prepend_path ~/repo/tup
