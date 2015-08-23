@@ -56,9 +56,6 @@ filetype on
 
 runtime! ftplugin/man.vim
 
-" Plugin 'Chiel92/vim-autoformat'
-let g:formatprg_args_cpp='--options=.astylerc'
-
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
 
