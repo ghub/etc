@@ -13,7 +13,7 @@ deps=". $deps"
 trap 'rm -f $tmp_file' EXIT
 
 (
-find $deps -type f -name "*.h" -o -name "*.moc" | xargs dirname
+find $deps -type f -name "*.h" -o -name "*.moc" | xargs -n1 dirname
 find $deps -type d -name include
 ) |
 grep -Evw "arm|mkspecs|win" |
