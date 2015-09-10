@@ -198,6 +198,7 @@ nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 augroup vimrc
     autocmd!
     autocmd BufNewFile,BufRead Tupfile,*.tup setfiletype tup
+    autocmd FileType gitcommit setlocal spell
     autocmd VimResized * wincmd =
 augroup END
 
