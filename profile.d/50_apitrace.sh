@@ -1,3 +1,6 @@
 #!/bin/sh -e
 
-prepend_path ~/repo/apitrace/build
+base=~/repo/apitrace
+
+prepend_path $base/build
+prepend_path $base/scripts
