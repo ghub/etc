@@ -91,7 +91,7 @@ nnoremap <Leader>a :A<CR>'"
 
 " Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_extra_conf_globlist=['~/ws/*']
+let g:ycm_extra_conf_globlist=['~/repo/*', '~/ws/*']
 let g:ycm_min_num_identifier_candidate_chars=4
 let g:ycm_seed_identifiers_with_syntax=1
 nnoremap <Leader>yc :YcmForceCompileAndDiagnostics<CR>
