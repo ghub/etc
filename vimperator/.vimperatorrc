@@ -1,10 +1,23 @@
 "3.8.3 (created: 2014/11/09 13:19:01)
 
-noremap ; :
-noremap : ;
+nnoremap <C-w> -builtin <Nop>
+nnoremap d <Nop>
+
+nnoremap <silent> [T :tabfirst<CR>
+nnoremap <silent> [t :tabprevious<CR>
+nnoremap <silent> ]T :tablast<CR>
+nnoremap <silent> ]t :tabnext<CR>
+
+nnoremap : ;
+nnoremap ; :
+vnoremap : ;
+vnoremap ; :
+
+nnoremap <silent> <Space>l :nohlsearch<CR>
 
 set hintchars=asdfghjkl;
 set hlsearch
+
 set toolbars=menu,tabs
 
 " vim: set ft=vimperator:
