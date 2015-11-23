@@ -1,3 +1,5 @@
 #!/bin/sh -e
 
-. ~/repo/z/z.sh
+if [ -f ~/repo/z/z.sh ]; then
+    . ~/repo/z/z.sh
+fi
