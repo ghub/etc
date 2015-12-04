@@ -182,8 +182,8 @@ nnoremap <Leader>iI yiw/^\/\/\s*Q<Esc>jO#include <><Esc>P
 nnoremap <Leader>ii yiw/^\/\/\s*C<Esc>jO#include <.h><Esc>B<Esc>p
 
 nnoremap <Leader>md yy/};$<Esc>P<<$BwC_;<Esc>
-nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>>>
-nnoremap <Leader>mi yy/{$<Esc>P$xbd^dwa, ()<Esc>P%Pa_<Esc>>>
+nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>
+nnoremap <Leader>mi yy/{$<Esc>P$xbd^dwa, ()<Esc>P%Pa_<Esc>
 
 nnoremap <Leader>ff :Ggrep! <cword><CR><CR>
 nnoremap <Leader>fc :Ggrep! -w "public <cword>"<CR><CR>
