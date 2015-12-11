@@ -4,6 +4,7 @@ src="
 bash
 cgdb
 ctags
+gdb
 git
 pentadactyl
 readline
