@@ -62,6 +62,7 @@ runtime! ftplugin/man.vim
 nnoremap <Leader>h :GHPH<CR>
 
 " Plugin 'kien/ctrlp.vim'
+let g:ctrlp_arg_map=1
 let g:ctrlp_extensions=['quickfix']
 let g:ctrlp_lazy_update=1
 let g:ctrlp_match_window='max:30'
