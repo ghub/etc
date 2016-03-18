@@ -192,6 +192,7 @@ nnoremap <Leader>ff :Ggrep! <cword><CR><CR>
 nnoremap <Leader>fc :Ggrep! -w "public <cword>"<CR><CR>
 nnoremap <Leader>fh :Ggrep! -w "new <cword>"<CR><CR>
 nnoremap <Leader>fs :Ggrep! -w "^ *<cword>\>[^&*:][^&*:]*[(;]"<CR><CR>
+nnoremap <Leader>fw :Ggrep! -w <cword><CR><CR>
 
 nnoremap <Leader>g g<C-]>
 nnoremap <Leader>l :nohlsearch<CR>
