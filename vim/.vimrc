@@ -180,10 +180,9 @@ vnoremap <Leader>fv :s/\s*=\s*0\s*//<CR>
 nnoremap <Leader>tv :.g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
 "vnoremap <Leader>tv :g/\<virtual /s///<CR>Ivirtual <Esc>$i = 0<Esc>
 
-nnoremap <Leader>iF yiw/^\/\/\s*Q<Esc>jOclass ;<Esc>P
-nnoremap <Leader>if yiw/^\/\/\s*C<Esc>jOclass ;<Esc>P
-nnoremap <Leader>iI yiw/^\/\/\s*Q<Esc>jO#include <><Esc>P
-nnoremap <Leader>ii yiw/^\/\/\s*C<Esc>jO#include <.h><Esc>B<Esc>p
+nnoremap <Leader>if yiw?#include<Esc>jOclass ;<Esc>P
+nnoremap <Leader>iI yiw?#include<Esc>jO#include <><Esc>P
+nnoremap <Leader>ii yiw?#include<Esc>jO#include <.h><Esc>B<Esc>p
 
 nnoremap <Leader>md yy/};$<Esc>P<<$BwC_;<Esc>
 nnoremap <Leader>mI yy/{$<Esc>P$xbd^dwa: ()<Esc>P%Pa_<Esc>
