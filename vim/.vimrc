@@ -98,6 +98,7 @@ let g:ycm_extra_conf_globlist=['~/repo/*', '~/ws/*']
 let g:ycm_min_num_identifier_candidate_chars=4
 let g:ycm_seed_identifiers_with_syntax=1
 nnoremap <Leader>yc :YcmForceCompileAndDiagnostics<CR>
+nnoremap <Leader>yf :YcmCompleter FixIt<CR>
 nnoremap <Leader>yg :YcmCompleter GoTo<CR>
 nnoremap <Leader>yr :YcmCompleter ClearCompilationFlagCache<CR>
 
