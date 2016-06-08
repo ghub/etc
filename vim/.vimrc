@@ -19,13 +19,13 @@ Plugin 'beyondmarc/opengl.vim'
 Plugin 'bling/vim-airline'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'djoshea/vim-autoread'
 Plugin 'emacsmodeline.vim'
 Plugin 'ghub/copycppdectoimp.vim'
 Plugin 'ghub/vim-unimpaired'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'honza/vim-snippets'
-Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'rdnetto/YCM-Generator'
@@ -64,7 +64,7 @@ runtime! ftplugin/man.vim
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
 
-" Plugin 'kien/ctrlp.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_arg_map=1
 let g:ctrlp_extensions=['quickfix']
 let g:ctrlp_lazy_update=1
