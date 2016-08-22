@@ -1,0 +1,53 @@
+
+set cursorline
+set gdefault
+set hlsearch
+set ignorecase
+set incsearch
+set shiftround
+set smartcase
+
+map <Space> \
+
+cnoremap jk <Esc>
+inoremap jk <Esc>
+vnoremap jk <Esc>
+
+nnoremap ;  :
+vnoremap ;  :
+
+nnoremap `  '
+nnoremap '  `
+
+vnoremap <  <gv
+vnoremap >  >gv
+
+nnoremap j  gj
+nnoremap k  gk
+
+nnoremap *  *zzzv
+nnoremap #  #zzzv
+nnoremap n  nzzzv
+nnoremap N  Nzzzv
+
+nnoremap Q  gqap
+vnoremap Q  gq
+
+nnoremap Y  y$
+
+nnoremap <C-I> :vsc View.NavigateForward<CR>
+nnoremap <C-O> :vsc View.NavigateBackward<CR>
+
+nnoremap <Leader>if yiw?#include<CR>jOclass <Esc>pa;<Esc>
+nnoremap <Leader>ii :vsc VAssistX.RefactorAddInclude<CR>
+
+nnoremap <Leader>md yy/};$<CR>P<<$BwC_;<Esc>
+nnoremap <Leader>mI yy/{$<CR>P$xbd^dwa: ()<Esc>P%Pa_<Esc>
+nnoremap <Leader>mi yy/{$<CR>P$xbd^dwa, ()<Esc>P%Pa_<Esc>
+
+nnoremap <Leader>ff :vsc VAssistX.FindReferences<CR>
+nnoremap <Leader>fc :vsc VAssistX.GotoRelated<CR>
+
+nnoremap <Leader>a :vsc VAssistX.OpenCorrespondingFile<CR>
+nnoremap <Leader>g :vsc VAssistX.GotoImplementation<CR>
+nnoremap <Leader>l :nohlsearch<CR>
