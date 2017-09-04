@@ -205,6 +205,8 @@ nnoremap <Leader>l :nohlsearch<CR>
 nnoremap <Leader>V :source $MYVIMRC<CR>
 nnoremap <Leader>v :vsplit $MYVIMRC<CR>
 
+vnoremap <Leader>t :Twrite<CR>
+
 augroup vimrc
     autocmd!
     autocmd BufNewFile,BufRead Tupfile,*.tup setfiletype tup
