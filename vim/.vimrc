@@ -209,6 +209,7 @@ augroup vimrc
     autocmd!
     autocmd BufNewFile,BufRead Tupfile,*.tup setfiletype tup
     autocmd FileType gitcommit setlocal spell
+    autocmd FileType lisp,scheme setlocal equalprg=scmindent.rkt
     autocmd VimResized * wincmd =
 augroup END
 
