@@ -68,6 +68,10 @@ runtime! ftplugin/man.vim
 " Plugin 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
 
+" Plugin 'Chiel92/vim-autoformat'
+let g:formatdef_scheme='"scmindent.rkt"'
+let g:formatters_scheme=['scheme']
+
 " Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_arg_map=1
 let g:ctrlp_extensions=['quickfix']
@@ -211,7 +215,6 @@ augroup vimrc
     autocmd!
     autocmd BufNewFile,BufRead Tupfile,*.tup setfiletype tup
     autocmd FileType gitcommit setlocal spell
-    autocmd FileType lisp,scheme setlocal equalprg=scmindent.rkt
     autocmd VimResized * wincmd =
 augroup END
 
