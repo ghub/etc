@@ -59,6 +59,7 @@ Plugin 'Valloric/MatchTagAlways'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/argtextobj.vim'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'wlangstroth/vim-racket'
 
 call vundle#end()
 filetype on
