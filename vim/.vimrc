@@ -91,6 +91,7 @@ nnoremap <Leader>tb :TagbarToggle<CR><C-W>=
 
 " Plugin 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list=1
+let g:syntastic_enable_racket_racket_checker=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
