@@ -1,4 +1,4 @@
-" Stole from (in no particular order)
+" Stolen from (in no particular order)
 "
 "   Martin Grenfell, github.com/scrooloose
 "   Matt Woznisk,    github.com/godlygeek
