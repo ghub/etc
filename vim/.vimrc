@@ -14,6 +14,7 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'beyondmarc/opengl.vim'
 Plugin 'bling/vim-airline'
