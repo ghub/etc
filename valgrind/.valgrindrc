@@ -1,0 +1,9 @@
+--memcheck:error-exitcode=255
+--memcheck:expensive-definedness-checks=yes
+--memcheck:gen-suppressions=all
+--memcheck:leak-check=full
+--memcheck:log-file=valgrind.log
+--memcheck:num-callers=500
+--memcheck:read-var-info=yes
+--memcheck:suppressions=valgrind.supp
+--memcheck:track-origins=yes
