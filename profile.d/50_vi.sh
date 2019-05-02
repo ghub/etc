@@ -7,7 +7,7 @@ create_link()
 {
     (
         cd /usr/local/bin
-        if [ ! -e $2 ]; then
+        if [ -e $1 -a ! -e $2 ]; then
             ln -s $1 $2
         fi
     )
