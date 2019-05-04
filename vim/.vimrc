@@ -10,75 +10,76 @@ set nocompatible
 
 " { Plugins
 
-filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/bundle')
 
-Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'beyondmarc/opengl.vim'
-Plugin 'bling/vim-airline'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'djoshea/vim-autoread'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'ElmCast/elm-vim.git'
-Plugin 'emacsmodeline.vim'
-Plugin 'FelikZ/ctrlp-py-matcher'
-Plugin 'ghub/copycppdectoimp.vim'
-Plugin 'ghub/vim-unimpaired'
-Plugin 'ghub/vim-vinegar'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'honza/vim-snippets'
-Plugin 'majutsushi/tagbar'
-Plugin 'MicahElliott/vrod'
-Plugin 'Raimondi/delimitMate'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
-Plugin 'sjl/gundo.vim'
-Plugin 'slashmili/alchemist.vim'
-Plugin 'tikhomirov/vim-glsl'
-Plugin 'tmux-plugins/vim-tmux'
-Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-eunuch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-jdaddy'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-obsession'
-Plugin 'tpope/vim-projectionist'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-scriptease'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-sexp-mappings-for-regular-people'
-Plugin 'tpope/vim-sleuth'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-tbone'
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/argtextobj.vim'
-Plugin 'vim-scripts/vim-auto-save'
-Plugin 'wlangstroth/vim-racket'
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'beyondmarc/opengl.vim'
+Plug 'bling/vim-airline'
+Plug 'Chiel92/vim-autoformat'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'djoshea/vim-autoread'
+Plug 'elixir-lang/vim-elixir'
+Plug 'ElmCast/elm-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'FelikZ/ctrlp-py-matcher'
+Plug 'ghub/copycppdectoimp.vim'
+Plug 'ghub/vim-unimpaired'
+Plug 'ghub/vim-vinegar'
+Plug 'gmarik/Vundle.vim'
+Plug 'honza/vim-snippets'
+Plug 'majutsushi/tagbar'
+Plug 'MicahElliott/vrod'
+Plug 'Raimondi/delimitMate'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'SirVer/ultisnips'
+Plug 'sjl/gundo.vim'
+Plug 'slashmili/alchemist.vim'
+Plug 'tikhomirov/vim-glsl'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-jdaddy'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-tbone'
+Plug 'Valloric/MatchTagAlways'
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'vim-scripts/emacsmodeline.vim'
+Plug 'vim-scripts/vim-auto-save'
+Plug 'wlangstroth/vim-racket'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'vim-scripts/vim-auto-save'
+Plug 'wlangstroth/vim-racket'
 
-call vundle#end()
-filetype on
+call plug#end()
 
 runtime! ftplugin/man.vim
 
-" Plugin 'ghub/copycppdectoimp.vim'
+" Plug 'ghub/copycppdectoimp.vim'
 nnoremap <Leader>h :GHPH<CR>
 
-" Plugin 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 let g:formatdef_scheme='"scmindent.rkt"'
 let g:formatters_scheme=['scheme']
 
-" Plugin 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_arg_map=1
 let g:ctrlp_extensions=['quickfix']
 let g:ctrlp_lazy_update=1
@@ -87,18 +88,18 @@ let g:ctrlp_match_window='max:30'
 let g:ctrlp_max_files=0
 let g:ctrlp_user_command=['.git', 'cd %s && git_ls_files.sh']
 
-" Plugin 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 let g:tagbar_left=1
 let g:tagbar_sort=0
 nnoremap <Leader>tb :TagbarToggle<CR><C-W>=
 
-" Plugin 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_enable_racket_racket_checker=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
-" Plugin 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 set runtimepath+=~/etc
 let g:UltiSnipsSnippetsDir='~/etc/UltiSnips'
 let g:UltiSnipsExpandTrigger='<C-S>'
@@ -106,10 +107,10 @@ let g:UltiSnipsJumpBackwardTrigger='<C-B>'
 let g:UltiSnipsJumpForwardTrigger='<C-F>'
 let g:UltiSnipsListSnippets='<C-T>'
 
-"Plugin 'tpope/vim-projectionist'
+" Plug 'tpope/vim-projectionist'
 nnoremap <Leader>a :A<CR>'"
 
-" Plugin 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_extra_conf_globlist=['~/repo/*', '~/ws/*']
 let g:ycm_min_num_identifier_candidate_chars=4
