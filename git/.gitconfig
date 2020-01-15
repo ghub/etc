@@ -1,7 +1,5 @@
 [alias]
 	rehook = "!rm -rf .git/hooks && git init && .git/hooks/post-commit"
-[commit]
-	template = .git/commit_template
 [core]
 	excludesfile = ~/.gitignore
 [init]
