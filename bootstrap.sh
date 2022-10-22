@@ -6,7 +6,6 @@ cgdb
 ctags
 gdb
 git
-pentadactyl
 readline
 tmux
 urxvt
