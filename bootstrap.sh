@@ -10,7 +10,6 @@ readline
 tmux
 urxvt
 vim
-vimperator
 "
 
 for each in $src; do
