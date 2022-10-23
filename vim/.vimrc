@@ -7,6 +7,7 @@
 "   Val Markovic,    github.com/Valloric
 
 set nocompatible
+" set diffopt-=internal
 
 " { Plugins
 
@@ -146,7 +147,7 @@ set shortmess=atI
 set smartcase
 set wildmode=longest,list,full
 
-colorscheme solarized
+" colorscheme solarized
 
 map <Space> \
 
@@ -187,7 +188,7 @@ nnoremap <F3>  !}sort -fu<CR>
 nnoremap <F4>  :Autoformat<CR>
 nnoremap <F5>  :set errorfile&<CR>:cgetfile<CR>
 nnoremap <F6>  :botright cwindow<CR>
-nnoremap <F7>  :Gstatus<Bar>wincmd K<CR>
+nnoremap <F7>  :Git<Bar>wincmd K<CR>
 nnoremap <F8>  :Make<CR>
 nnoremap <F9>  :Dispatch<CR>
 nnoremap <F10> :Start<CR>
