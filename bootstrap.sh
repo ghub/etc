@@ -13,5 +13,5 @@ vim
 "
 
 for each in $src; do
-    stow $each
+    stow -R --dotfiles $each
 done
