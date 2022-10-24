@@ -1,2 +1,3 @@
 set makeprg=make.sh\ %
 set nowrap
+set tags^=.git/tags
