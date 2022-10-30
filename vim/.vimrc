@@ -14,7 +14,6 @@ set nocompatible
 call plug#begin('~/.vim/bundle')
 
 Plug 'airblade/vim-gitgutter'
-Plug 'altercation/vim-colors-solarized'
 Plug 'beyondmarc/opengl.vim'
 Plug 'bling/vim-airline'
 Plug 'Chiel92/vim-autoformat'
@@ -30,6 +29,7 @@ Plug 'ghub/vim-unimpaired'
 Plug 'ghub/vim-vinegar'
 Plug 'gmarik/Vundle.vim'
 Plug 'honza/vim-snippets'
+Plug 'lifepillar/vim-solarized8'
 Plug 'majutsushi/tagbar'
 Plug 'MicahElliott/vrod'
 Plug 'Raimondi/delimitMate'
@@ -63,9 +63,6 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'vim-scripts/emacsmodeline.vim'
-Plug 'vim-scripts/vim-auto-save'
-Plug 'wlangstroth/vim-racket'
-Plug 'vim-scripts/argtextobj.vim'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'wlangstroth/vim-racket'
 
@@ -147,7 +144,13 @@ set shortmess=atI
 set smartcase
 set wildmode=longest,list,full
 
-" colorscheme solarized
+if !empty($COLORTERM)
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+
+colorscheme solarized8
 
 map <Space> \
 
