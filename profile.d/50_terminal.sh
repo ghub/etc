@@ -4,5 +4,6 @@
 # https://github.com/termstandard/colors
 
 if [ $( uname -s ) = Darwin ]; then
-    export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/etc/terminfo
+    append_terminfo_dir $HOME/etc/terminfo
+    export TERMINFO_DIRS
 fi
