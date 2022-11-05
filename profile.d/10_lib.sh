@@ -14,9 +14,9 @@ prepend_path()
     fi
 }
 
-append_terminfo_dir()
+append_terminfo_dirs()
 {
-    if [ -d "$1" ] && [[ ":$TERMINFO_DIR:" != *":$1:"* ]]; then
-        TERMINFO_DIR="${TERMINFO_DIR:+"$TERMINFO_DIR:"}$1"
+    if [ -d "$1" ] && [[ ":$TERMINFO_DIRS:" != *":$1:"* ]]; then
+        TERMINFO_DIRS="${TERMINFO_DIRS:+"$TERMINFO_DIRS:"}$1"
     fi
 }
