@@ -39,3 +39,4 @@ URxvt.tabbed.tabbar-bg:		0
 URxvt.tabbed.tabbar-fg:		2
 URxvt.tabbed.tab-bg:		0
 URxvt.tabbed.tab-fg:		3
+URxvt.termName:			xterm-256color
