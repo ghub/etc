@@ -60,11 +60,11 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
 Plug 'Valloric/MatchTagAlways'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'vim-scripts/emacsmodeline.vim'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'wlangstroth/vim-racket'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
